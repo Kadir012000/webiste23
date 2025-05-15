@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell on GalShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">GalShop</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for anything...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="sell.html" class="sell-btn active">Sell</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <main class="sell-page">
+        <h1>List Your Item for Sale</h1>
+        
+        <form class="listing-form" id="listingForm">
+            <div class="form-section">
+                <h2>Item Details</h2>
+                
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required placeholder="What are you selling?">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <optgroup label="Electronics & Technology">
+                            <option value="computers">Computers & Laptops</option>
+                            <option value="phones">Phones & Accessories</option>
+                            <option value="audio">Audio & Headphones</option>
+                            <option value="photo">Photo & Video</option>
+                            <option value="gaming">Gaming</option>
+                        </optgroup>
+                        <optgroup label="Fashion & Clothing">
+                            <option value="men">Men's Fashion</option>
+                            <option value="women">Women's Fashion</option>
+                            <option value="kids">Kids & Baby</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="accessories">Accessories</option>
+                        </optgroup>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <div class="price-input">
+                        <span class="currency">$</span>
+                        <input type="number" id="price" name="price" required min="0" step="0.01" placeholder="0.00">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Select condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required rows="5" placeholder="Describe your item in detail..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Photos</h2>
+                <div class="photo-upload">
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop photos here or click to upload</p>
+                        <input type="file" id="photos" name="photos" multiple accept="image/*" hidden>
+                    </div>
+                    <div class="photo-preview" id="photoPreview"></div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Location & Contact</h2>
+                
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required placeholder="Enter your location">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Method</label>
+                    <select id="contact" name="contact" required>
+                        <option value="">Select preferred contact method</option>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">List Item</button>
+                <button type="button" class="draft-btn">Save as Draft</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About GalShop</h3>
+                <p>Your trusted marketplace for buying and selling</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GalShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/sell.js"></script>
+</body>
+</html> 

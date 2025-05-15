@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalShop - Ihr Online-Marktplatz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Startseite</a>
+                <a href="pages/categories.html"><i class="fas fa-th-large"></i> Kategorien</a>
+                <a href="pages/sell.html"><i class="fas fa-tag"></i> Verkaufen</a>
+                <a href="pages/login.html"><i class="fas fa-user"></i> Anmelden</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Willkommen bei GalShop</h1>
+                <p>Ihr vertrauenswürdiger Marktplatz für Online-Shopping und Verkauf</p>
+                <div class="hero-buttons">
+                    <a href="pages/categories.html" class="btn btn-primary">
+                        <i class="fas fa-shopping-bag"></i> Jetzt einkaufen
+                    </a>
+                    <a href="pages/sell.html" class="btn btn-secondary">
+                        <i class="fas fa-tag"></i> Artikel verkaufen
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <h2>Beliebte Kategorien</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Elektronik & Technik</h3>
+                    <p>Smartphones, Laptops, Tablets und mehr</p>
+                    <a href="pages/categories.html?cat=electronics" class="btn btn-primary">Entdecken</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Mode & Kleidung</h3>
+                    <p>Herren-, Damen- und Kindermode</p>
+                    <a href="pages/categories.html?cat=fashion" class="btn btn-primary">Entdecken</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Haus & Garten</h3>
+                    <p>Möbel, Dekoration und Gartenartikel</p>
+                    <a href="pages/categories.html?cat=home" class="btn btn-primary">Entdecken</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sport & Freizeit</h3>
+                    <p>Sportgeräte, Outdoor und Fitness</p>
+                    <a href="pages/categories.html?cat=sports" class="btn btn-primary">Entdecken</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Warum GalShop?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sicher & Zuverlässig</h3>
+                    <p>Geschützte Transaktionen und verifizierte Verkäufer</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Schnelle Lieferung</h3>
+                    <p>Zuverlässiger Versand in ganz Deutschland</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Unser Kundenservice ist immer für Sie da</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Einfache Rückgabe</h3>
+                    <p>14 Tage Rückgaberecht auf alle Artikel</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Newsletter abonnieren</h2>
+                <p>Bleiben Sie informiert über neue Angebote und Aktionen</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+                    <button type="submit" class="btn btn-primary">Abonnieren</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Über GalShop</h3>
+                <ul>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Karriere</a></li>
+                    <li><a href="#">Presse</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Schnelllinks</h3>
+                <ul>
+                    <li><a href="#">Hilfe & Support</a></li>
+                    <li><a href="#">Versand & Lieferung</a></li>
+                    <li><a href="#">Rückgabe & Umtausch</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Folgen Sie uns</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GalShop. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
