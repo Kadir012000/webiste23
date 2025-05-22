@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkaufen - HabenWill</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HabenWill</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Suchen Sie nach Produkten...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Startseite</a>
+            <a href="categories.html">Kategorien</a>
+            <a href="sell.html" class="active">Verkaufen</a>
+            <a href="login.html">Anmelden</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="sell-section">
+            <h1>Artikel verkaufen</h1>
+            <form id="sellForm" class="sell-form">
+                <div class="form-group">
+                    <label for="title">Titel</label>
+                    <input type="text" id="title" name="title" required placeholder="Geben Sie einen aussagekräftigen Titel ein">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Kategorie</label>
+                    <select id="category" name="category" required>
+                        <option value="">Kategorie auswählen</option>
+                        <option value="electronics">Elektronik & Technik</option>
+                        <option value="fashion">Mode & Kleidung</option>
+                        <option value="home">Haus & Garten</option>
+                        <option value="sports">Sport & Freizeit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Preis (€)</label>
+                    <input type="number" id="price" name="price" required min="0" step="0.01" placeholder="0.00">
+                </div>
+
+                <div class="form-group">
+                    <label for="condition">Zustand</label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Zustand auswählen</option>
+                        <option value="new">Neu</option>
+                        <option value="like-new">Wie neu</option>
+                        <option value="good">Gut</option>
+                        <option value="fair">Gebraucht</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Beschreibung</label>
+                    <textarea id="description" name="description" required rows="5" placeholder="Beschreiben Sie Ihr Produkt detailliert..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Bilder</label>
+                    <div class="image-upload">
+                        <input type="file" id="images" name="images" multiple accept="image/*">
+                        <label for="images" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            Bilder auswählen
+                        </label>
+                        <div id="imagePreview" class="image-preview"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Standort</label>
+                    <input type="text" id="location" name="location" required placeholder="Stadt, Bundesland">
+                </div>
+
+                <div class="form-group">
+                    <label for="shipping">Versandoptionen</label>
+                    <div class="shipping-options">
+                        <label>
+                            <input type="checkbox" name="shipping" value="pickup">
+                            Abholung möglich
+                        </label>
+                        <label>
+                            <input type="checkbox" name="shipping" value="delivery">
+                            Versand möglich
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-check"></i>
+                    Artikel einstellen
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HabenWill. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/sell.js"></script>
+</body>
+</html> 

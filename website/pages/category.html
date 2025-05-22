@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategorie - HabenWill</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="../index.html"><i class="fas fa-home"></i> Startseite</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Kategorien</a>
+                <a href="sell.html"><i class="fas fa-tag"></i> Verkaufen</a>
+                <a href="login.html"><i class="fas fa-user"></i> Anmelden</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="category-page">
+        <div class="category-header">
+            <h1 id="categoryTitle">Kategorie</h1>
+            <div class="category-filters">
+                <select id="sortBy">
+                    <option value="newest">Neueste zuerst</option>
+                    <option value="price-asc">Preis aufsteigend</option>
+                    <option value="price-desc">Preis absteigend</option>
+                </select>
+                <div class="filter-buttons">
+                    <button class="btn btn-outline" id="filterButton">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-content">
+            <aside class="category-sidebar">
+                <div class="filter-section">
+                    <h3>Preisbereich</h3>
+                    <div class="price-range">
+                        <input type="number" id="minPrice" placeholder="Min">
+                        <span>-</span>
+                        <input type="number" id="maxPrice" placeholder="Max">
+                        <button class="btn btn-sm" id="applyPrice">Anwenden</button>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Zustand</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" value="new"> Neu</label>
+                        <label><input type="checkbox" value="like-new"> Wie neu</label>
+                        <label><input type="checkbox" value="good"> Gut</label>
+                        <label><input type="checkbox" value="fair"> Akzeptabel</label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Standort</h3>
+                    <select id="location">
+                        <option value="">Alle Standorte</option>
+                        <option value="wien">Wien</option>
+                        <option value="graz">Graz</option>
+                        <option value="linz">Linz</option>
+                        <option value="salzburg">Salzburg</option>
+                        <option value="innsbruck">Innsbruck</option>
+                        <option value="klagenfurt">Klagenfurt</option>
+                        <option value="villach">Villach</option>
+                        <option value="wels">Wels</option>
+                        <option value="sankt-polten">Sankt Pölten</option>
+                        <option value="dornbirn">Dornbirn</option>
+                    </select>
+                </div>
+            </aside>
+
+            <div class="items-grid" id="itemsGrid">
+                <!-- Items will be loaded dynamically -->
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-outline" id="prevPage" disabled>
+                <i class="fas fa-chevron-left"></i> Zurück
+            </button>
+            <span id="pageInfo">Seite 1 von 1</span>
+            <button class="btn btn-outline" id="nextPage" disabled>
+                Weiter <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HabenWill. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/category.js"></script>
+</body>
+</html> 
